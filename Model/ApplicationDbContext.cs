@@ -16,6 +16,8 @@ namespace Model
 
         public DbSet<Profile> Profile { get; set; }
         public DbSet<Rol> Rol { get; set; }
+        public DbSet<Project> Project { get; set; }
+        public DbSet<Task> Task { get; set; }
 
     }
 }
