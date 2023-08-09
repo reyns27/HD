@@ -11,7 +11,7 @@ namespace Model
     {
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            options.UseSqlServer(@"Server=localhost;DataBase=DB-HD;User ID=admin;Password=Supermario27**;TrustServerCertificate=True;");
+            options.UseSqlServer(@"Server=localhost;DataBase=DB-HD;User ID=administrator;Password=hola1234;TrustServerCertificate=True;");
         }
 
         public DbSet<Profile> Profile { get; set; }
