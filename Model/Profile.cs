@@ -24,5 +24,7 @@ namespace Model
         public DateTime CreateAt { get; set; } = DateTime.Now;
         public DateTime LastUpdatedAt { get; set; } = DateTime.Now;
         public int IsActive { get; set; } = 1;
+
+        public virtual List<Project> ListProject { get; set; } = new List<Project>();
     }
 }

@@ -7,9 +7,14 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    public class Task 
+    public class Task
     {
         [Key]
-        public int Id { get; set; }
+        public int Id { get; set; } 
+        public int ProjectId { get; set; }
+        public string Description { get; set; } = string.Empty;
+        public TaskDate TaskDate { get; set; } = new TaskDate();
+        public int IsActived { get; set; } = 1;
+
     }
 }
